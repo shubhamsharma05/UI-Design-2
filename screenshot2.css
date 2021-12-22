@@ -1,0 +1,150 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+}
+body{
+    background-color: rgb(250, 250, 250);
+    /* background-color: #eee; */
+    background-color: rgb(255, 255, 255);
+}
+#filter-section{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-top: 50px;
+    width: 90%;
+}
+#search{
+    padding: 10px 10px 10px 50px;
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px grey;
+}
+i{
+    position: absolute;
+     padding: 10px 10px 10px 20px;
+    min-width: 40px;
+    color:grey
+}
+#filter{
+    border:none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px grey;
+}
+#title{
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+
+}
+#title div{
+    /* margin-left: auto; */
+    margin-right: 10%;
+    /* padding: 20px; */
+}
+#parent{
+    background-color: #eee;
+    padding-top: 10px;
+    /* margin-top: 20px; */
+}
+.parent-dark{
+    background-color: rgb(27, 27, 27) !important;
+}
+#main{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top:50px;
+    /* height: 400px; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    height: 300px;
+    width: 21%;
+    /* margin-right:5%; */
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+img{
+    width: 100%;
+    height: 120px;
+    border-radius: 10px 10px 0 0;
+}
+.bottom{
+    margin: 20px 20px;
+}
+p{
+    font-size: 13px;
+}
+#mode{
+    /* padding-right: 1vw; */
+    /* margin-right:auto; */
+    justify-self:right;
+    cursor: pointer;
+    /* align-self: flex-end; */
+}
+.darkmode{
+  color: #fff ;
+    background-color: #080808 ;
+}
+@media (min-width:610px) and (max-width:875px) {
+    .card{
+        width: 30%;
+    }
+}
+@media (min-width:410px) and (max-width:609px) {
+    .card{
+        width: 48%;
+    }
+}
+@media (max-width:409px)  {
+    .card{
+        width: 70%;
+    }
+    #title{
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    #filter-section{
+        flex-direction: column;
+    }
+    #search{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:700px){
+ #search{
+     width: 50vw
+ }
+}
+@media (max-width:300px){
+   .card{
+       width: 95%;
+   }
+   }
+   @media (max-width:785px){
+       #title div{
+           margin-right:20%
+           /* margin-right: 80px; */
+       }
+   }
+   @media (max-width:495px){
+    #title div{
+        margin-right:27%
+        /* margin-right: 80px; */
+    }
+} 
+#result{
+    text-transform: uppercase;
+}
